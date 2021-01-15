@@ -28,3 +28,10 @@ root@14e692c534be:~# /opt/modules/jdk1.8.0_271/bin/javac HelloWorld.java
 root@14e692c534be:~# /opt/modules/jdk1.8.0_271/bin/java HelloWorld
 HelloWorld!
 ```
+## 环境变量
+```
+[root@01521045db7c jdk1.8.0_271]# vi /etc/profile
+export JAVA_HOME=/opt/modules/jdk1.8.0_271
+export PATH=$JAVA_HOME/bin:$PATH
+[root@01521045db7c jdk1.8.0_271]# source /etc/profile
+```

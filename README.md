@@ -9,4 +9,4 @@ docker login
 Username: jinyumantang
 ```
 # 创建大数据网络
-docker network create --driver=bridge bigdata
+docker network create --driver=bridge --subnet=172.168.0.0/24 bigdata
