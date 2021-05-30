@@ -1,6 +1,7 @@
 # bigdataDocker
 # docker安装（在CentOS上安装Docker Engine）
 https://docs.docker.com/engine/install/centos/
+https://docs.docker.com/engine/install/ubuntu/
 # 安装Docker Compose
 https://docs.docker.com/compose/install/
 # 登录docker
