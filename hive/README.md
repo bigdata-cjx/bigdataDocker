@@ -86,7 +86,7 @@ docker run -it -p 8088:8088 -p 50070:50070 -p 50075:50075 --net bigdata --ip 172
 service ssh start
 /opt/modules/hadoop-2.7.0/sbin/start-dfs.sh
 
-docker run --net bigdata --ip 172.168.0.3 --name mysql57 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_ROOT_HOST="%" -d mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-time-zone=+8:00  
+docker run --net bigdata --ip 172.168.0.3 --name mysql57-hive -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_ROOT_HOST="%" -d mysql:5.7 
 
 docker run -it --net bigdata --ip 172.168.0.4 --name hive -p 10000:10000 dockerhubbigdata/bigdata:hive /bin/bash
 /opt/modules/hive-2.3.4-bin/bin/hive
