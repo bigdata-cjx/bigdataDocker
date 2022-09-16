@@ -89,6 +89,11 @@ service ssh start
 docker run --net bigdata --ip 172.168.0.3 --name mysql57-hive -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_ROOT_HOST="%" -d mysql:5.7 
 
 docker run -it --net bigdata --ip 172.168.0.4 --name hive -p 10000:10000 dockerhubbigdata/bigdata:hive /bin/bash
+
+# hiveserver2 启动
+/opt/modules/hive-2.3.4-bin/bin/hive --service hiveserver2 &
+
+# 终端启动
 /opt/modules/hive-2.3.4-bin/bin/hive
 hive (default)> show databases;
 OK
